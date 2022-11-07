@@ -1,3 +1,22 @@
+@font-face {
+    font-family: "jost";
+    src: url('fonts/Jost-Regular.ttf') format('truetype');
+}
+
+:root {
+    --blue-10: #E0F8FF;
+    --blue-20: #B7E9FF;
+    --blue-30: #3AA7E4;
+    --blue-40: #196CCD;
+    --blue-green: #00C9D6;
+
+    --warm-10: #FFBF47;
+    --warm-20: #EE8F39;
+    --warm-30: #D45018;
+
+    --font-jost: "jost";
+}
+
 img {
     height: 400px;
 }
@@ -7,5 +26,6 @@ img {
 }
 
 #cstudy-type {
-    font-style: italic;
+    font-family: var(--font-jost);
+    font-style: oblique;
 }
