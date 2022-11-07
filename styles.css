@@ -17,15 +17,17 @@
     --font-jost: "jost";
 }
 
+body {
+    font-family: var(--font-jost);
+    margin: 1.5rem;
+}
+
 img {
-    height: 400px;
+    width: 100%;
 }
 
 #logo {
-    height: 4em;
-}
-
-#cstudy-type {
-    font-family: var(--font-jost);
-    font-style: oblique;
+    width: 3em;
+    display: block;
+    margin: auto;
 }
