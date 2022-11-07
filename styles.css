@@ -31,3 +31,13 @@ img {
     display: block;
     margin: auto;
 }
+
+#cstudy-name, #cstudy-type, #cstudy-time {
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 0.8rem;
+    text-align: center;
+}
