@@ -1,6 +1,26 @@
 @font-face {
-    font-family: "jost";
+    font-family: "jost-regular";
     src: url('fonts/Jost-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "jost-medium";
+    src: url('fonts/Jost-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "jost-light";
+    src: url('fonts/Jost-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "lora-regular";
+    src: url('fonts/Lora-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "lora-semibold";
+    src: url('fonts/Lora-SemiBold.ttf') format('truetype');
 }
 
 :root {
@@ -14,16 +34,37 @@
     --warm-20: #EE8F39;
     --warm-30: #D45018;
 
-    --font-jost: "jost";
+    --jost-regular: "jost-regular";
+    --jost-medium: "jost-medium";
+    --jost-light: "jost-light";
+
+    --lora-regular: "lora-regular";
+    --lora-semibold: "lora-semibold";
 }
+
+/* General CSS styles (for every page) */
 
 body {
-    font-family: var(--font-jost);
-    margin: 1.5rem;
+    font-family: var(--jost-regular);
+    margin: 1rem 1.5rem 0 1.5rem;
 }
 
-img {
+header {
+    /* position: fixed; */
+    background-color: white;
+}
+
+footer {
+    background-color: var(--blue-40);
+    color: white;
+}
+
+figure, img {
     width: 100%;
+}
+
+figure {
+    margin: auto;
 }
 
 #logo {
@@ -32,12 +73,72 @@ img {
     margin: auto;
 }
 
-#cstudy-name, #cstudy-type, #cstudy-time {
+nav a {
+    padding: 0.3rem;
+    font-size: 1.15rem;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--blue-40);
+}
+
+nav, #page-title, .project-name, #cstudy-name, #cstudy-type, #cstudy-time, figcaption {
     text-align: center;
 }
 
 figcaption {
     font-style: italic;
     font-size: 0.8rem;
-    text-align: center;
+}
+
+/* Homepage CSS styles (for index.html) */
+
+#home-intro {
+    background-color: var(--blue-10);
+    margin: 0%;
+}
+
+#intro-tags p {
+    display: inline-block;
+    background-color: var(--blue-green);
+    border-radius: 4rem;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+}
+
+#projects > div {
+    margin-top: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem .5rem 0 rgba(0, 0, 0, 0.2);
+    padding: .8rem;
+}
+
+#projects > div > img {
+    padding: 0rem;
+}
+
+h2 {
+    margin: .75rem 0;
+}
+
+.view-button {
+    display: inline-block;
+    /* text-align: center;
+    margin: auto; */
+    border: 3px solid var(--blue-30);
+    border-radius: 4rem;
+    padding: 0.5rem 1.5rem;
+}
+
+.view-button:hover {
+    background-color: var(--blue-30);
+}
+
+.view-button a:hover {
+    color: white;
 }
