@@ -31,8 +31,11 @@
     --blue-green: #00C9D6;
 
     --warm-10: #FFBF47;
+    --warm-100: #FFEFD0;
     --warm-20: #EE8F39;
+    --warm-200: #FFE2CD;
     --warm-30: #D45018;
+    --warm-300: #FFDEDC;
 
     --jost-regular: "jost-regular";
     --jost-medium: "jost-medium";
@@ -41,6 +44,8 @@
     --lora-regular: "lora-regular";
     --lora-semibold: "lora-semibold";
 }
+
+
 
 /* General CSS styles (for every page) */
 
@@ -54,9 +59,15 @@ header {
     background-color: white;
 }
 
-footer {
+footer, footer a {
     background-color: var(--blue-40);
     color: white;
+    text-align: center;
+}
+
+footer {
+    padding: .5rem 0;
+    margin-top: 2rem;
 }
 
 figure, img {
@@ -87,13 +98,23 @@ a {
     color: var(--blue-40);
 }
 
-nav, #page-title, .project-name, #cstudy-name, #cstudy-type, #cstudy-time, figcaption {
+nav, #page-title, .project-tags, .button-div, .project-name, #cstudy-name, #cstudy-type, #cstudy-time, figcaption {
     text-align: center;
 }
 
 figcaption {
     font-style: italic;
     font-size: 0.8rem;
+}
+
+#cstudy-intro, #cstudy-outro {
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+h1, h2 {
+    font-family: var(--lora-semibold);
+    margin: 1rem 0 0 0;
 }
 
 /* Homepage CSS styles (for index.html) */
@@ -108,7 +129,7 @@ figcaption {
     background-color: var(--blue-green);
     border-radius: 4rem;
     padding: 0.5rem 1rem;
-    margin: 0.5rem;
+    margin: 0.3rem;
 }
 
 #projects > div {
@@ -122,14 +143,16 @@ figcaption {
     padding: 0rem;
 }
 
-h2 {
+/* h2 {
     margin: .75rem 0;
+} */
+
+.project-tags {
+    font-style: italic;
 }
 
 .view-button {
     display: inline-block;
-    /* text-align: center;
-    margin: auto; */
     border: 3px solid var(--blue-30);
     border-radius: 4rem;
     padding: 0.5rem 1.5rem;
@@ -137,8 +160,47 @@ h2 {
 
 .view-button:hover {
     background-color: var(--blue-30);
+    color: white;
 }
 
-.view-button a:hover {
-    color: white;
+#linkedin > img, #email > img {
+    width: 2rem;
+}
+
+#contact-icons {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+#cstudy-type, #cstudy-time {
+    margin: .5rem;
+}
+
+/* About page */
+
+/* Project Star */
+
+#project-star #cstudy-intro, #project-star #cstudy-outro {
+    background-color: var(--warm-100);
+}
+
+/* Project Bubbly */
+
+#project-bubbly #cstudy-intro, #project-bubbly #cstudy-outro {
+    background-color: var(--warm-200);
+}
+
+
+/* Project Ramen Bar */
+
+#project-ramen #cstudy-intro, #project-ramen #cstudy-outro {
+    background-color: var(--warm-300);
+}
+
+
+/* Project Unify */
+
+#project-unify #cstudy-intro, #project-unify #cstudy-outro {
+    background-color: var(--blue-20);
 }
