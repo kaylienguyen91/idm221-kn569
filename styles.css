@@ -54,7 +54,7 @@ body {
     margin: 0rem;
 }
 
-main, #home-intro > div {
+.main-content, #home-intro > div {
     margin: 0 1.5rem;
 }
 
@@ -64,6 +64,10 @@ header {
     background-color: white;
     padding-top: 1rem;
 }
+
+/* main {
+    margin-top: 107px;
+} */
 
 figure, img {
     width: 100%;
@@ -84,6 +88,11 @@ nav a {
     font-size: 1.15rem;
 }
 
+nav a:hover {
+    font-size: 1.3rem;
+    font-family: var(--jost-medium);
+}
+
 nav {
     margin-top: 1rem;
 }
@@ -93,7 +102,7 @@ a {
     color: var(--blue-40);
 }
 
-nav, #page-title, .project-tags, .button-div, .project-name, #cstudy-name, #cstudy-type, #cstudy-time, figcaption {
+nav, #page-title, .project-tags, .button-div, .project-name, #cstudy-name, #cstudy-type, #cstudy-time, figcaption, #subtitle {
     text-align: center;
 }
 
@@ -102,7 +111,7 @@ figcaption {
     font-size: 0.8rem;
 }
 
-#cstudy-intro, #cstudy-outro {
+#cstudy-intro, #cstudy-outro, form {
     border-radius: 2rem;
     padding: 1rem;
 }
@@ -188,14 +197,21 @@ footer {
     margin-top: 1rem;
 } */
 
-.view-button {
+.view-button, #submit-button {
     display: inline-block;
     border: 3px solid var(--blue-30);
     border-radius: 4rem;
     padding: 0.5rem 1.5rem;
 }
 
-.view-button:hover {
+#submit-button {
+    font-family: var(--jost-regular);
+    font-size: 1rem;
+    background-color: white;
+    color: var(--blue-40);
+}
+
+.view-button:hover, #submit-button:hover {
     background-color: var(--blue-30);
     color: white;
 }
@@ -204,7 +220,13 @@ footer {
     margin: .5rem;
 }
 
+
 /* About page */
+
+#personal-pic {
+    border-radius: 6rem 1rem 6rem 1rem;
+    box-shadow: .3rem .3rem .5rem 0 rgba(0, 0, 0, 0.2);
+}
 
 /* Project Star */
 
@@ -230,4 +252,26 @@ footer {
 
 #project-unify #cstudy-intro, #project-unify #cstudy-outro {
     background-color: var(--blue-20);
+}
+
+
+/* Contact page */
+
+form {
+    background-color: var(--warm-100);
+}
+
+input[type=text], #message {
+    width: 100%;
+    padding: .5rem 1rem;
+    margin: .5rem 0 1.2rem 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: var(--jost-regular);
+}
+
+#message {
+    padding-bottom: 5rem;
 }
