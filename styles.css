@@ -102,7 +102,7 @@ a {
     color: var(--blue-40);
 }
 
-nav, #page-title, .project-tags, .button-div, .project-name, #cstudy-name, #cstudy-type, #cstudy-time, figcaption, #subtitle {
+nav, #page-title, .project-tags, .button-div, .project-name, #cstudy-name, #cstudy-type, #cstudy-time, figcaption, #subtitle, #bubbly-vid {
     text-align: center;
 }
 
@@ -254,6 +254,22 @@ footer {
     background-color: var(--blue-20);
 }
 
+
+/* Gallery page */
+
+.gallery-subtitle {
+    margin-top: .5rem;
+    color: black;
+    text-shadow: .3rem .3rem .3rem rgba(0, 0, 0, 0.2);
+}
+
+.gallery-subtitle:hover {
+    color: var(--blue-40);
+}
+
+#art {
+    margin-top: 2rem;
+}
 
 /* Contact page */
 
