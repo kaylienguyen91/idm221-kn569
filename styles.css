@@ -54,20 +54,22 @@ body {
     margin: 0rem;
 }
 
-.main-content, #home-intro > div {
-    margin: 0 1.5rem;
-}
-
 header {
-    /* position: fixed; */
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     background-color: white;
-    padding-top: 1rem;
+    padding: 1rem 0 1rem 0;
 }
 
-/* main {
-    margin-top: 107px;
-} */
+main {
+    margin-top: 123px;
+}
+
+.main-content {
+    margin: 123px 1.5rem 0 1.5rem;
+}
 
 figure, img {
     width: 100%;
@@ -160,6 +162,10 @@ footer {
     background-color: var(--blue-10);
     padding-top: .25rem;
     margin-top: 1rem;
+}
+
+#home-intro > div {
+    margin: 0 1.5rem;
 }
 
 #intro-tags p {
