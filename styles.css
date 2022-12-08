@@ -95,7 +95,7 @@ nav a:hover {
     font-family: var(--jost-medium);
 }
 
-nav, .photo-album {
+nav {
     margin-top: 1rem;
 }
 
@@ -273,7 +273,7 @@ footer {
     color: var(--blue-40);
 }
 
-#art {
+#art, .photo-album {
     margin-top: 2rem;
 }
 
