@@ -104,7 +104,7 @@ a {
     color: var(--blue-40);
 }
 
-nav, #page-title, .project-tags, .button-div, .project-name, #cstudy-name, #cstudy-type, #cstudy-time, figcaption, #subtitle, #bubbly-vid, .photo-album h2 {
+nav, #page-title, .project-tags, .button-div, .project-name, #cstudy-name, #cstudy-type, #cstudy-time, figcaption, #subtitle, #bubbly-vid, .gallery-album h2 {
     text-align: center;
 }
 
@@ -273,7 +273,7 @@ footer {
     color: var(--blue-40);
 }
 
-#art, .photo-album {
+#art, .gallery-album {
     margin-top: 2rem;
 }
 
