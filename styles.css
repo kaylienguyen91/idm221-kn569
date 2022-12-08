@@ -95,7 +95,7 @@ nav a:hover {
     font-family: var(--jost-medium);
 }
 
-nav {
+nav, .photo-album {
     margin-top: 1rem;
 }
 
@@ -104,7 +104,7 @@ a {
     color: var(--blue-40);
 }
 
-nav, #page-title, .project-tags, .button-div, .project-name, #cstudy-name, #cstudy-type, #cstudy-time, figcaption, #subtitle, #bubbly-vid {
+nav, #page-title, .project-tags, .button-div, .project-name, #cstudy-name, #cstudy-type, #cstudy-time, figcaption, #subtitle, #bubbly-vid, .photo-album h2 {
     text-align: center;
 }
 
